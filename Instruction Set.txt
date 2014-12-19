@@ -1,0 +1,13 @@
+### Instruction Set
+The instruction set will be a 4 bit instruction coupled with a 4 bit address of information to be operated on.
+
+| __Instruction__ 	| __OP Code__ 	| __Description__ 					|
+|---------------------------	|------------------------	|-----------------------------------------------------------------	|
+| __NOP__		| 0000		| No operation cycle					|
+| __LDA__		| 0001		| Load the value from the accumulator		|
+| __ADD__		| 0010		| Add the value to the accumulator			|
+| __SUB__		| 0011		| Subtract the value from the accumulator		|
+| __STO__		| 0100		| Store value in accumulator to ram			|
+| __OUT__		| 0101		| Display the current value in the accumulator	|
+| __JMP__		| 0110		| Jump to specified address in program		|
+| __HLT__		| 0111		| Halt the program					|
