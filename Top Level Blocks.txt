@@ -3,8 +3,18 @@
 	* A counter that will increment with every operation done
 2. __Registers__
 	* Memory which will temporarily store bits for an operation to use
-	* Two of these will be required, one for the parameter, and one to store the value being operated on
+	* Two will be required, one for the parameter, and one to store the value being operated on
+	* One will be required to store memory addresses (MAR)
 3. __Arithmetic Logic Unit (ALU)__
 	* The device which interprets the arithmetic instruction and performs it on the given registers
 	* Two instructions, add (ADD) and subtract (SUB) are required of this device
-4. 
+4. __Program Memory/RAM__
+	* 256 Bytes of RAM accessed by 8 bit locations
+5. __Instruction Register__
+	* 4 bit register to store the operation
+6. __Output Register__
+	* 8 bit register that will display an 8 bit number
+7. __Synchronous Clock__
+	* Simple 555 timer (around 1Hz for testing)
+8.  __Sequencer/Controller__
+	* A ring counter which tells each register/instruction when to operate
