@@ -1,0 +1,20 @@
+### Open Issues
+* ALU Needs mux to switch output functions
+* Counter needs fix for JMP command.  Current set up will not reliably set correct location.
+
+### In Progress
+* Top Level Diagram
+* ALU
+* Program Counter
+
+### Planned
+* ALU
+	* Greater Than (GTH)
+	* Less Than (LTH)
+* MAR
+* RAM
+* Instruction Register
+* Sequencer
+* B Register
+* Accumulator
+* Output Register
