@@ -1,5 +1,5 @@
 ### Open Issues
-* ALU Needs mux to switch output functions
+* ALU Needs mux to switch output functions - logic check (16 bit wide bus?)
 * Counter needs fix for JMP command.  Current set up will not reliably set correct location.
 
 ### In Progress
@@ -18,3 +18,6 @@
 * B Register
 * Accumulator
 * Output Register
+ 
+### Questions
+* How to make _Program Counter_ > 255

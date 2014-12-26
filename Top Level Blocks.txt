@@ -1,20 +1,22 @@
 ### Top Level Blocks
 1. __Program Counter__
-	* A counter that will increment with every operation done
-2. __Registers__
-	* Memory which will temporarily store bits for an operation to use
-	* Two will be required, one for the parameter, and one to store the value being operated on
-	* One will be required to store memory addresses (MAR)
+	* Counter that is used to keep place in current program.  
+	* When the counter overflows, e.g. > 255, the carry flag is set triggering the MAR to check the first byte in RAM for the correct instruction location for the next instruction in the program.  This allows a program to exist that is more than 256 lines of code.  Actually 2^16 lines long, or 65,536 lines.
+	* The counter can be set to a specified "jump" location to allow a program to loop, or reset to 0 to restart the program.
+2. __Accumulator Register__
+	* 16 bit register to hold last word operated on by the ALU.  This is useful because most operations recall the same number multiple times.
 3. __Arithmetic Logic Unit (ALU)__
 	* The device which interprets the arithmetic instruction and performs it on the given registers
 	* Two instructions, add (ADD) and subtract (SUB) are required of this device
-4. __Program Memory/RAM__
+4. __Memory Address Register (MAR)__
+	* Register that stores the next instruction location in the 
+5. __Program Memory/RAM__
 	* 256 Bytes of RAM accessed by 8 bit locations
-5. __Instruction Register__
+6. __Instruction Register__
 	* 4 bit register to store the operation
-6. __Output Register__
+7. __Output Register__
 	* 8 bit register that will display an 8 bit number
-7. __Synchronous Clock__
+8. __Synchronous Clock__
 	* Simple 555 timer (around 1Hz for testing)
-8.  __Sequencer/Controller__
+9.  __Sequencer/Controller__
 	* A ring counter which tells each register/instruction when to operate
