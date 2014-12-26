@@ -2,11 +2,6 @@
 * ALU Needs mux to switch output functions - logic check (16 bit wide bus?)
 * Counter needs fix for JMP command.  Current set up will not reliably set correct location.
 
-### In Progress
-* Top Level Diagram
-* ALU
-* Program Counter
-
 ### Planned
 * ALU
 	* Greater Than (GTH)
@@ -18,6 +13,15 @@
 * B Register
 * Accumulator
 * Output Register
+
+### In Progress
+* Top Level Diagram
+* ALU
+* Program Counter
+ 
+### Completed
+* Full adder/subtractor circuit
  
 ### Questions
-* How to make _Program Counter_ > 255
+B How to make _Program Counter_ > 255
+	A. Create an overflow flag on the adder which will set a counter in RAM to increase.  The RAM counter will be the upper byte.  Thus creating a 16 bit counter enabling up to 64,536 lines of code to be run.
