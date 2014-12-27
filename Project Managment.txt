@@ -20,7 +20,8 @@
 * Program Counter
  
 ### Completed
-* Full adder/subtractor circuit
+* 1-bit Full adder/subtractor circuit
+* 8-bit Adder/Subtractor Block
  
 ### Questions
 B How to make _Program Counter_ > 255
