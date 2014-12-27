@@ -3,9 +3,6 @@
 * Counter needs fix for JMP command.  Current set up will not reliably set correct location.
 
 ### Planned
-* ALU
-	* Greater Than (GTH)
-	* Less Than (LTH)
 * MAR
 * RAM
 * Instruction Register
@@ -17,11 +14,14 @@
 ### In Progress
 * Top Level Diagram
 * ALU
+	* Full Adder/Subtractor
+	* Logical Comparator
 * Program Counter
  
 ### Completed
 * 1-bit Full adder/subtractor circuit
 * 8-bit Adder/Subtractor Block
+* ALU
  
 ### Questions
 B How to make _Program Counter_ > 255
