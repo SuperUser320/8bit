@@ -119,7 +119,7 @@ Entry Wire Line
 Entry Wire Line
 	5300 4350 5400 4450
 Wire Bus Line
-	5400 2400 5400 4450
+	5400 2400 5400 4600
 Wire Bus Line
 	5400 2400 6000 2400
 Wire Wire Line
@@ -198,4 +198,12 @@ Wire Wire Line
 	3650 3700 3800 3700
 Wire Wire Line
 	3800 3800 3650 3800
+Text HLabel 2800 2250 0    60   Input ~ 0
+Byte_A
+Text HLabel 2800 2400 0    60   Input ~ 0
+Byte_B
+Wire Bus Line
+	7150 2700 7500 2700
+Text HLabel 7500 2700 2    60   Input ~ 0
+Byte_Out
 $EndSCHEMATC
