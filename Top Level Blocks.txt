@@ -18,5 +18,5 @@
 	* 8 bit register that will display an 8 bit number
 8. __Synchronous Clock__
 	* Simple 555 timer (around 1Hz for testing)
-9.  __Sequencer/Controller__
+9. __Sequencer/Controller__
 	* A ring counter which tells each register/instruction when to operate
